@@ -42,6 +42,9 @@ public class MsPaintClone
         UI.addButton("Colour", this::chooseColour);
         UI.addButton("Random Colour", this::changeColour);
     
+        // clear screen button
+        UI.addButton("Clear", UI::clearGraphics);
+        
         // set up slider
         UI.addSlider("Size", 0, 50, 25, this::setSize);
         
